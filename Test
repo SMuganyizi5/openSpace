@@ -1,0 +1,17 @@
+# Name: Samuel Muganyizi
+# Date: April 24, 2023
+# Assignment: Week 7 Assignment
+
+Stocks = {'GOGL':'106', 'CL':'78', 'IBM':'11', 'GIS':'88', 'TGT':'164', 'NKE': '127', 'COLM': '90', 'BUD': '66', 'PEP': '186'}
+
+lValues = list(Stocks.values())
+
+print(f"These are the stocks we have in our inventory: {list(Stocks.keys())}")
+
+k = input('Which stock would you want to buy? ')
+
+
+if k not in Stocks:
+  print("That stock is not in our inventory.")
+else:
+  print(f"{k} will cost you {Stocks[k]} dollars.")
